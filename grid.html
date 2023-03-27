@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Products services sales">
+    <meta name="description" content="ICECLEAN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8d92229b07.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-image: url(images/bg.jpeg);
+            color: white;
+        }
+
+        .bg {
+            background-color: rgba(0, 0, 255, 0.53);
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+        }
+
+        .row1 {
+            display: grid;
+            grid-template-columns: 40% 10%;
+            justify-content: space-between;
+        }
+
+        .row1>div:first-child {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .row1>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .bg1 {
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+        }
+
+        .row2 {
+            display: grid;
+            grid-template-columns: 20% 20%;
+            justify-content: space-between;
+        }
+
+        .row2>div:last-child {
+            display: grid;
+            grid-template-columns: 85% 15%;
+            align-content: center;
+        }
+
+        input {
+            border: none;
+            color: rgba(0, 0, 255);
+            padding: 0px 10px;
+        }
+
+        .row2>div>button {
+            padding: 5px;
+            border: none;
+            background-color: rgba(0, 0, 255);
+            color: white;
+        }
+
+        .row3 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            justify-content: space-between;
+        }
+
+        section {
+            display: grid;
+        }
+
+        article {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            text-align: center;
+        }
+
+        article>div>div:nth-child(2) {
+            padding: 10px 15px;
+        }
+
+        h3 {
+            margin: 0;
+            color: rgba(0, 0, 255);
+        }
+
+        article p {
+            font-size: small;
+            color: #555454;
+        }
+
+        article>div:nth-child(odd) {
+            background-color: gainsboro;
+        }
+
+        aside {
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
+        .sells {
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .sells>div>div:first-child {
+            border: solid gainsboro 2px;
+        }
+
+        .sells>div>div:last-child {
+            text-align: center;
+            color: rgba(0, 0, 255);
+        }
+
+        .industry {
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            background-color: gainsboro;
+            padding: 40px 0px;
+        }
+
+        .box1 h3 {
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .box1>div:first-child {
+            background-color: rgba(0, 0, 255);
+            margin-bottom: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+
+        .col1>div:first-child {
+            background-color: rgba(0, 0, 255);
+            color: white;
+            padding: 8px 0px 8px 20px;
+        }
+
+        .col1>div:last-child {
+            background-color: white;
+            color: rgba(0, 0, 255);
+            padding: 10px 0px;
+        }
+
+        .col1 ul {
+            padding: 0px 20px;
+            list-style-type: none;
+        }
+
+        .col1 li {
+            line-height: 35px;
+        }
+
+        .col2 {
+            background-image: url("images/nurse2.jpg");
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        .para {
+            background-color: rgb(0, 0, 0, 0.8);
+            color: white;
+            padding: 28px 20px 15px 20px;
+        }
+
+        .para p,
+        ul {
+            padding-bottom: 20px;
+        }
+
+        .para li {
+            line-height: 20px;
+        }
+
+        .company {
+            background-image: url("images/bg.jpeg");
+            display: grid;
+            justify-content: center;
+            padding: 40px 0px;
+            color: white;
+        }
+
+        .company>div {
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .company>div div {
+            padding: 10px 0px;
+        }
+
+        .company button {
+            padding: 8px 20px;
+            color: rgba(0, 0, 255);
+            border: none;
+            background-color: white;
+        }
+
+        footer {
+            color: rgba(0, 0, 255);
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+            padding: 20px 0px;
+        }
+
+        .end {
+            display: grid;
+            grid-template-columns: 30% 25% 25% 20%;
+            justify-content: space-between;
+        }
+
+        .logo p {
+            font-size: small;
+        }
+
+        .support ul {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+
+        @media (max-width:576px) {
+
+            .row1,
+            .table {
+                grid-template-columns: 100%;
+            }
+
+            .row1>div:first-child {
+                grid-template-columns: 65% 35%;
+            }
+
+            .row1>div:nth-child(2) {
+                grid-template-columns: auto auto auto auto;
+            }
+
+            .row2,
+            .row3 {
+                grid-template-columns: auto auto auto;
+            }
+
+            article,
+            .end {
+                grid-template-columns: 50% 50%;
+            }
+
+            .sells {
+                grid-template-columns: 48% 48%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <div>
+                <div class="row1">
+                    <div>
+                        <p><i class="fa-regular fa-envelope"></i> sales@icecleanie.ie</p>
+                        <p><i class="fa-solid fa-phone"></i> +00 (123) 456 7890</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg1">
+            <div>
+                <div class="row2">
+                    <div><img src="images/clear1.png" alt="ice"></div>
+                    <div>
+                        <input type="text" name="search" value="Search" aria-label="search">
+                        <button type="submit" value="search" aria-label="search"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div>
+                <div class="row3">
+                    <a href="https://www.google.com/">PRODUCTS</a>
+                    <a href="https://www.google.com/">INDUSTRY SECTORS</a>
+                    <a href="https://www.google.com/">SPARE PARTS</a>
+                    <a href="https://www.google.com/">CLEANING SUPPLIES</a>
+                    <a href="https://www.google.com/">FAQS</a>
+                    <a href="https://www.google.com/">ABOUT</a>
+                    <a href="https://www.google.com/">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <video width="100%" controls>
+            <source src="video.mp4" type="video/mp4" alt="beach">
+        </video>
+    </section>
+    <article>
+        <div>
+            <div><img src="images/image1_orig.jpg" alt="hire"></div>
+            <div>
+                <h3>HIRE</h3>
+                <p>Why Buy when you can Hire-ICECLEAN offers a comprehensive range of industrial cleaning equipment
+                    to cater for your needs,on short or long term hire.</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="images/Screenshot_2023_0321_110053.png" alt="sales"></div>
+            <div>
+                <h3>SALES</h3>
+                <p>
+                    whatever the surface we've got a cleaning machine to clean it-we've got the best selection of
+                    industrial cleaning machines in ireland.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div><img src="images/image3_orig.jpg" alt="services"></div>
+            <div>
+                <h3>SERVICES</h3>
+                <p>
+                    Our experienced team of engineers and trained techincians are committed to fast, cost effective
+                    repairs.Carried out at our regional service centres or on-site from our fully stocked service
+                    fleet.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div><img src="images/img4.png" alt="spareparts"></div>
+            <div>
+                <h3>SPARE PARTS</h3>
+                <p>
+                    We have over 30, 000 spare parts, accesories and consumables for all makes of industrail
+                    cleaning machines in stock for next day delivery.
+                </p>
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div class="box1">
+            <div>
+                <h3>BEST SELLERS</h3>
+            </div>
+            <div class="sells">
+                <div>
+                    <div><img src="images/m1.jpg" alt=""></div>
+                    <div>GENIE</div>
+                </div>
+                <div>
+                    <div><img src="images/m2.webp" alt=""></div>
+                    <div>MAGNA</div>
+                </div>
+                <div>
+                    <div><img src="images/m3.jpg" alt=""></div>
+                    <div>ORBIS ECO 400</div>
+                </div>
+                <div>
+                    <div><img src="images/m4.jpg" alt=""></div>
+                    <div>MULTIWASH MW340</div>
+                </div>
+            </div>
+            <div class="sells">
+                <div>
+                    <div><img src="images/Screenshot_2023_0321_184352.png" alt=""></div>
+                    <div>FV9 BACK VAC 220V</div>
+                </div>
+                <div>
+                    <div><img src="images/m6.png" alt=""></div>
+                    <div>LSU 375 WET VAC</div>
+                </div>
+                <div>
+                    <div><img src="images/m7.png" alt=""></div>
+                    <div>STEAM AND VAC PRO</div>
+                </div>
+                <div>
+                    <div><img src="images/m8.png" alt=""></div>
+                    <div>POLARIS 800</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="industry">
+        <div class="box1">
+            <div>
+                <h3>SELECT YOUR INDUSTRY</h3>
+            </div>
+            <div class="table">
+                <div class="col1">
+                    <div>Healthcare</div>
+                    <div>
+                        <ul>
+                            <li>Bakery & Food Manufacturing</li>
+                            <li>Construction</li>
+                            <li>Facilities Management & Contract Cleaners</li>
+                            <li>Education</li>
+                            <li>Retail</li>
+                            <li>Government & Local Authorities</li>
+                            <li>Industry & Manufacturing</li>
+                            <li>Warehouse & Manufacturing</li>
+                            <li>Hospitality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="para">
+                        <p>ICECLEAN offers a comprehensive range of health sector certified scrubber-dryers, industrial
+                            sweepers, industrial vaccum cleaners and industrial pressure washers to help keep your
+                            premises clean and safe.</p>
+                        <p>Regular cleaning of production areas is paramount to not only ensure your building complies
+                            with hygiene standards, but also to give you:</p>
+                        <ul>
+                            <li>Safe and clean floors</li>
+                            <li>High-quality environment</li>
+                            <li>Cost effective cleaning solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company">
+        <div>
+            <h2>IRELAND'S LEADING CLEANING</h2>
+            <h2>MACHINE COMPANY</h2>
+            <div>
+                <button type="submit">ABOUT ICECLEAN</button>
+                <button type="submit">ORDER MACHINE DEMO</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="end">
+            <div class="contact">
+                <h4>CONTACT US</h4>
+                <p><i class="fa-solid fa-location-dot"></i>ICE-Industrial Cleaning Equipment</p>
+                <p>Unit5 Western business park oak close,Dublin 12</p>
+                <p><i class="fa-solid fa-phone"></i> +00 (123) 456 7890</p>
+                <p><i class="fa-regular fa-envelope"></i> sales@domain.com</p>
+                <h4>CONNECT WITH US</h4>
+                <div class="icon">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+            </div>
+            <div class="support">
+                <h4>CUSTOMER SUPPORT</h4>
+                <ul>
+                    <li>Orders and Returns</li>
+                    <li>View Cart</li>
+                    <li>Login</li>
+                    <li>Sitemap</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+            <div class="support">
+                <h4>OUR LINKS</h4>
+                <ul>
+                    <li>Products</li>
+                    <li>Industry Sectors</li>
+                    <li>Spare Parts</li>
+                    <li>Cleaning supplies</li>
+                    <li>Faqs</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/footer-logo.png" alt="logo">
+                <p>Our team is here to help you save time and money, and we achieve this by understanding your cleaning
+                    equipment needs and providing you with the most cost-effective and customised cleaning solutions.
+                </p>
+                <img src="images/icons8-visa-48.png" alt="">
+                <img src="images/icons8-visa-electron-48.png" alt="">
+                <img src="images/icons8-jcb-48.png" alt="">
+                <img src="images/payment.png" alt="">
+                <img src="images/payment (1).png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
